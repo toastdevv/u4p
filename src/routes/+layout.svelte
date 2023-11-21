@@ -15,16 +15,11 @@
 		NavLi,
 		DropdownDivider
 	} from 'flowbite-svelte';
-	import {
-		CaretDownSolid,
-		FacebookSolid,
-		TwitterSolid,
-		XCompanySolid
-	} from 'flowbite-svelte-icons';
+	import { CaretDownSolid, FacebookSolid, XCompanySolid } from 'flowbite-svelte-icons';
 	import Icon from '@iconify/svelte';
 </script>
 
-<Navbar class="flex h-16 items-center justify-center">
+<Navbar>
 	<NavBrand href="/">
 		<P size="2xl" weight="bold">oooo</P>
 	</NavBrand>
