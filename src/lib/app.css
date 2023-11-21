@@ -3,7 +3,23 @@
 @tailwind utilities;
 
 .semi-screen {
-	height: calc(100vh - 4.6rem);
+	height: 24rem;
+}
+
+@media (min-width: 768px) {
+	.semi-screen {
+		height: calc(100vh - 4.6rem);
+	}
+}
+
+.semi-screen-n {
+	height: auto;
+}
+
+@media (min-width: 768px) {
+	.semi-screen-n {
+		height: calc(100vh - 4.6rem);
+	}
 }
 
 .coolbg {

@@ -3,9 +3,7 @@
 	import { CaretRightSolid } from 'flowbite-svelte-icons';
 </script>
 
-<header
-	class="md:semi-screen flex w-full flex-col gap-8 bg-gray-500 p-8 drop-shadow-lg md:flex-row"
->
+<header class="semi-screen-n flex w-full flex-col gap-8 bg-gray-500 p-8 drop-shadow-lg md:flex-row">
 	<div class="flex w-full flex-shrink flex-col drop-shadow-lg md:h-full">
 		<Heading class="mb-5 text-slate-100">Latest News</Heading>
 		<a
@@ -16,7 +14,7 @@
 	</div>
 	<div class="flex w-full flex-col md:h-full md:w-96">
 		<Heading class="mb-4 mt-3 text-4xl text-slate-100">More Articles</Heading>
-		<div class="flex h-full flex-col gap-4 md:gap-2">
+		<div class="flex h-full flex-col gap-3 p-2 md:gap-2 md:p-0">
 			<a
 				href="/"
 				class="aspect-video w-full bg-slate-300 transition-all hover:rounded-md hover:border-2 hover:border-gray-800 md:aspect-auto md:h-full"
