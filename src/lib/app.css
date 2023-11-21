@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.semi-screen {
+	height: calc(100vh - 4rem);
+}
+
+.coolbg {
+	background: url('/psflag.jpg');
+	background-size: cover;
+	background-position: center;
+}
