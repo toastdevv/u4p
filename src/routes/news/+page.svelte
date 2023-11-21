@@ -3,48 +3,50 @@
 	import { CaretRightSolid } from 'flowbite-svelte-icons';
 </script>
 
-<header class="semi-screen flex w-full gap-8 bg-gray-500 p-8 drop-shadow-lg">
-	<div class="flex h-full w-full flex-shrink flex-col drop-shadow-lg">
+<header
+	class="md:semi-screen flex w-full flex-col gap-8 bg-gray-500 p-8 drop-shadow-lg md:flex-row"
+>
+	<div class="flex w-full flex-shrink flex-col drop-shadow-lg md:h-full">
 		<Heading class="mb-5 text-slate-100">Latest News</Heading>
 		<a
 			href="/"
-			class="h-full w-full bg-slate-300 transition-all hover:rounded-md hover:border-2 hover:border-red-700"
+			class="aspect-video w-full bg-slate-300 transition-all hover:rounded-md hover:border-2 hover:border-red-700 md:aspect-auto md:h-full"
 		>
 		</a>
 	</div>
-	<div class="flex h-full w-96 flex-col">
+	<div class="flex w-full flex-col md:h-full md:w-96">
 		<Heading class="mb-4 mt-3 text-4xl text-slate-100">More Articles</Heading>
-		<div class="flex h-full flex-col gap-2">
+		<div class="flex h-full flex-col gap-4 md:gap-2">
 			<a
 				href="/"
-				class="h-full bg-slate-300 transition-all hover:rounded-md hover:border-2 hover:border-gray-800"
+				class="aspect-video w-full bg-slate-300 transition-all hover:rounded-md hover:border-2 hover:border-gray-800 md:aspect-auto md:h-full"
 			>
 			</a>
 			<a
 				href="/"
-				class="h-full bg-slate-300 transition-all hover:rounded-md hover:border-2 hover:border-white"
+				class="aspect-video h-full w-full bg-slate-300 transition-all hover:rounded-md hover:border-2 hover:border-white md:aspect-auto md:h-full"
 			>
 			</a>
 			<a
 				href="/"
-				class="h-full bg-slate-300 transition-all hover:rounded-md hover:border-2 hover:border-primary-500"
+				class="aspect-video h-full w-full bg-slate-300 transition-all hover:rounded-md hover:border-2 hover:border-primary-500 md:aspect-auto md:h-full"
 			>
 			</a>
 		</div>
 	</div>
 </header>
 
-<main class="flex flex-col justify-evenly gap-28 p-24">
+<main class="flex flex-col justify-evenly gap-16 p-8 md:gap-28 md:p-24">
 	<div>
-		<P class="flex items-center gap-2 text-4xl font-bold">
+		<P class="flex items-center gap-2 text-3xl font-bold sm:text-4xl">
 			<CaretRightSolid size="lg" />
 			More News
 		</P>
-		<div class="flex flex-col gap-3 py-8">
+		<div class="flex flex-col gap-2 py-4 sm:py-8">
 			{#each Array(5) as item, i (i)}
 				<a
 					href="/"
-					class="flex h-36 gap-2 rounded-md p-3 transition-all hover:bg-gray-100 hover:drop-shadow"
+					class="flex flex-col gap-2 rounded-md p-3 transition-all hover:bg-gray-100 hover:drop-shadow sm:h-36 sm:flex-row"
 				>
 					<div class="aspect-video bg-slate-400"></div>
 					<div>
