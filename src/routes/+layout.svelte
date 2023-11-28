@@ -1,155 +1,191 @@
-<script>
-	import '$lib/app.css';
-	import {
-		P,
-		Footer,
-		FooterBrand,
-		FooterLinkGroup,
-		FooterLink,
-		FooterCopyright,
-		FooterIcon,
-		Navbar,
-		NavBrand,
-		NavHamburger,
-		NavUl,
-		NavLi,
-		DropdownDivider
-	} from 'flowbite-svelte';
-	import { CaretDownSolid, FacebookSolid, XCompanySolid } from 'flowbite-svelte-icons';
+<script lang="ts">
+	import '$lib/styles/app.css';
 	import Icon from '@iconify/svelte';
+	import { page } from '$app/stores';
+
+	let navs = [
+		{ title: 'Home', href: '/' },
+		{ title: 'News', href: '/news' },
+		{ title: 'Blog', href: '/blog' },
+		{ title: 'Entities', href: '/entities' },
+		{ title: 'Disclaimer', href: '/disclaimer' },
+		{ title: 'About Us', href: '/about' }
+	];
+
+	let isMenu: boolean = false;
 </script>
 
-<Navbar>
-	<NavBrand href="/">
-		<P size="2xl" weight="bold">oooo</P>
-	</NavBrand>
-	<NavHamburger />
-	<NavUl>
-		<NavLi
-			href="/news"
-			class="group relative text-base font-semibold underline decoration-transparent transition-all hover:decoration-primary-600
-				hover:decoration-2 hover:opacity-75"
-		>
-			<div class="absolute flex h-full w-full justify-center">
-				<CaretDownSolid
-					size="sm"
-					class="-translate-y-4 text-red-600 opacity-0 transition-all group-hover:-translate-y-3 group-hover:opacity-100"
-				/>
-			</div>
-			News
-		</NavLi>
-		<NavLi
-			href="/blog"
-			class="group relative text-base font-semibold underline decoration-transparent transition-all hover:decoration-primary-600 hover:decoration-2 hover:opacity-75"
-		>
-			<div class="absolute flex h-full w-full justify-center">
-				<CaretDownSolid
-					size="sm"
-					class="-translate-y-4 text-red-600 opacity-0 transition-all group-hover:-translate-y-3 group-hover:opacity-100"
-				/>
-			</div>
-			Blog
-		</NavLi>
-		<NavLi
-			href="/entities"
-			class="group relative text-base font-semibold underline decoration-transparent transition-all hover:decoration-primary-600 hover:decoration-2 hover:opacity-75"
-		>
-			<div class="absolute flex h-full w-full justify-center">
-				<CaretDownSolid
-					size="sm"
-					class="-translate-y-4 text-red-600 opacity-0 transition-all group-hover:-translate-y-3 group-hover:opacity-100"
-				/>
-			</div>
-			Entities
-		</NavLi>
-		<NavLi
-			href="/disclaimer"
-			class="group relative text-base font-semibold underline decoration-transparent transition-all hover:decoration-primary-600 hover:decoration-2 hover:opacity-75"
-		>
-			<div class="absolute flex h-full w-full justify-center">
-				<CaretDownSolid
-					size="sm"
-					class="-translate-y-4 text-red-600 opacity-0 transition-all group-hover:-translate-y-3 group-hover:opacity-100"
-				/>
-			</div>
-			Disclaimer
-		</NavLi>
-		<NavLi
-			href="/about"
-			class="group relative text-base font-semibold underline decoration-transparent transition-all hover:decoration-primary-600 hover:decoration-2 hover:opacity-75"
-		>
-			<div class="absolute flex h-full w-full justify-center">
-				<CaretDownSolid
-					size="sm"
-					class="-translate-y-4 text-red-600 opacity-0 transition-all group-hover:-translate-y-3 group-hover:opacity-100"
-				/>
-			</div>
-			About Us
-		</NavLi>
-	</NavUl>
-</Navbar>
+<div
+	class="{isMenu
+		? 'pointer-events-auto opacity-100 backdrop-blur-md'
+		: 'invisible pointer-events-none opacity-0'} fixed bottom-0 left-0 right-0 top-0 z-10 flex items-center justify-center bg-white transition-all duration-300"
+>
+	<div class="fixed top-0 flex w-full flex-row items-center justify-end p-4">
+		<button on:click={() => (isMenu = false)}>
+			<Icon icon="ph:x" class="text-4xl font-bold text-gray-600" />
+		</button>
+	</div>
+	<div class="pr-12">
+		<ul class="flex flex-col gap-5">
+			{#each navs as nav}
+				<li class="p-2">
+					<a
+						href={nav.href}
+						on:click={() => (isMenu = false)}
+						aria-current={$page.url.pathname === nav.href}
+						class="text-3xl font-semibold {$page.url.pathname === nav.href
+							? 'text-maingreen-800'
+							: 'text-gray-600'} underline drop-shadow-lg"
+					>
+						<div class="absolute flex h-full w-full items-center">
+							<Icon
+								icon="fa:caret-right"
+								class="text-2xl text-red-700 {$page.url.pathname === nav.href
+									? '-translate-x-6 opacity-100'
+									: '-translate-x-8 opacity-0'} transition-all "
+							/>
+						</div>
+						{nav.title}
+					</a>
+				</li>
+			{/each}
+		</ul>
+	</div>
+</div>
+
+<nav class="flex flex-row items-center justify-between px-6 py-4">
+	<a href="/">
+		<p class="text-2xl font-bold">oooo</p>
+	</a>
+	<button
+		role="menu"
+		class="visible inline-flex gap-8 md:invisible md:hidden"
+		on:click={() => (isMenu = true)}
+	>
+		<Icon icon="ci:hamburger-md" class="text-3xl" />
+	</button>
+	<ul class="invisible hidden md:visible md:inline-flex md:gap-8">
+		{#each navs as nav}
+			<li
+				class="hover:decoration-maingreen-600 group relative underline decoration-transparent transition-all hover:decoration-2 hover:underline-offset-2 hover:opacity-75"
+			>
+				<a href={nav.href} class="text-lg font-normal">
+					<div class="absolute flex h-full w-full justify-center">
+						<Icon
+							icon="ion:caret-down-sharp"
+							class="-translate-y-4 text-2xl text-red-600 opacity-0 transition-all group-hover:-translate-y-3 group-hover:opacity-100"
+						/>
+					</div>
+					{nav.title}
+				</a>
+			</li>
+		{/each}
+	</ul>
+</nav>
 
 <slot />
 
-<DropdownDivider class="mx-4 mb-4 bg-gray-300" />
+<hr class="mx-4 mb-4 bg-gray-300" />
 
-<Footer footerType="socialmedia">
+<footer class="p-5">
 	<div class="md:flex md:justify-between">
 		<div class="mb-6 md:mb-0">
-			<FooterBrand href="/" name="ooooo" />
+			<a href="/">
+				<h1 class="text-2xl font-bold">ooooo</h1>
+			</a>
 		</div>
 		<div class="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
 			<div>
 				<h2 class="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
 					Resources
 				</h2>
-				<FooterLinkGroup>
-					<FooterLink liClass="mb-4" href="/news">News</FooterLink>
-					<FooterLink liClass="mb-4" href="/blog">Blog</FooterLink>
-					<FooterLink liClass="mb-4" href="/entities">Entities</FooterLink>
-				</FooterLinkGroup>
+				<ul>
+					<li class="mb-4">
+						<a href="/news" class="font-normal text-gray-600 hover:text-gray-900 hover:underline">
+							News
+						</a>
+					</li>
+					<li class="mb-4">
+						<a href="/blog" class="font-normal text-gray-600 hover:text-gray-900 hover:underline">
+							Blog
+						</a>
+					</li>
+					<li class="mb-4">
+						<a
+							href="/entities"
+							class="font-normal text-gray-600 hover:text-gray-900 hover:underline"
+						>
+							Entities
+						</a>
+					</li>
+				</ul>
 			</div>
 			<div>
 				<h2 class="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
 					Follow us
 				</h2>
-				<FooterLinkGroup>
-					<FooterLink liClass="mb-4" href="/">Instagram</FooterLink>
-					<FooterLink liClass="mb-4" href="/">Twitter</FooterLink>
-					<FooterLink liClass="mb-4" href="/">Facebook</FooterLink>
-				</FooterLinkGroup>
+				<ul>
+					<li class="mb-4">
+						<a href="/" class="font-normal text-gray-600 hover:text-gray-900 hover:underline">
+							Instagram
+						</a>
+					</li>
+					<li class="mb-4">
+						<a href="/" class="font-normal text-gray-600 hover:text-gray-900 hover:underline">
+							Twitter
+						</a>
+					</li>
+					<li class="mb-4">
+						<a href="/" class="font-normal text-gray-600 hover:text-gray-900 hover:underline">
+							Facebook
+						</a>
+					</li>
+				</ul>
 			</div>
 			<div>
 				<h2 class="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
 					Information
 				</h2>
-				<FooterLinkGroup>
-					<FooterLink liClass="mb-4" href="/about">About Us</FooterLink>
-					<FooterLink liClass="mb-4" href="/disclaimer">Disclaimer</FooterLink>
-				</FooterLinkGroup>
+				<ul>
+					<li class="mb-4">
+						<a href="/about" class="font-normal text-gray-600 hover:text-gray-900 hover:underline">
+							About Us
+						</a>
+					</li>
+					<li class="mb-4">
+						<a
+							href="/disclaimer"
+							class="font-normal text-gray-600 hover:text-gray-900 hover:underline"
+						>
+							Disclaimer
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
 	<hr class="my-6 border-gray-200 dark:border-gray-700 sm:mx-auto lg:my-8" />
 	<div class="sm:flex sm:items-center sm:justify-between">
-		<FooterCopyright href="/" by="FreePS" />
+		<p class="text-base text-gray-500">© 2023 ooooo All Rights Reserved.</p>
 		<div class="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-			<FooterIcon href="/">
+			<a href="/">
 				<Icon
 					icon="mdi:instagram"
-					class="h-4 w-4 text-gray-500 hover:text-gray-900 dark:text-gray-500 dark:hover:text-white"
+					class="h-5 w-5 text-gray-500 hover:text-gray-900 dark:text-gray-500 dark:hover:text-white"
 				/>
-			</FooterIcon>
-			<FooterIcon href="/">
-				<XCompanySolid
-					class="h-4 w-4 text-gray-500 hover:text-gray-900 dark:text-gray-500 dark:hover:text-white"
+			</a>
+			<a href="/">
+				<Icon
+					icon="fa6-brands:x-twitter"
+					class="h-5 w-5 text-gray-500 hover:text-gray-900 dark:text-gray-500 dark:hover:text-white"
 				/>
-			</FooterIcon>
-			<FooterIcon href="/">
-				<FacebookSolid
-					class="h-4 w-4 text-gray-500 hover:text-gray-900 dark:text-gray-500 dark:hover:text-white"
+			</a>
+			<a href="/">
+				<Icon
+					icon="ri:facebook-fill"
+					class="h-5 w-5 text-gray-500 hover:text-gray-900 dark:text-gray-500 dark:hover:text-white"
 				/>
-			</FooterIcon>
+			</a>
 		</div>
 	</div>
-</Footer>
+</footer>
