@@ -118,14 +118,6 @@
 							Entities
 						</a>
 					</li>
-					<li class="mb-4">
-						<a
-							href="/resources"
-							class="font-normal text-gray-600 hover:text-gray-900 hover:underline"
-						>
-							Resources
-						</a>
-					</li>
 				</ul>
 			</div>
 			<div>
@@ -166,6 +158,14 @@
 							class="font-normal text-gray-600 hover:text-gray-900 hover:underline"
 						>
 							Disclaimer
+						</a>
+					</li>
+					<li class="mb-4">
+						<a
+							href="/resources"
+							class="font-normal text-gray-600 hover:text-gray-900 hover:underline"
+						>
+							Resources
 						</a>
 					</li>
 				</ul>
