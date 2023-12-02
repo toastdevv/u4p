@@ -1,12 +1,13 @@
-<script lang="ts">
+<script>
 	import Icon from '@iconify/svelte';
+	export let data;
 </script>
 
 <header class="semi-screen-n flex w-full flex-col gap-8 bg-gray-500 p-8 drop-shadow-lg md:flex-row">
 	<div class="flex w-full flex-shrink flex-col drop-shadow-lg md:h-full">
 		<h1 class="mb-5 text-5xl font-black text-slate-100">Latest News</h1>
 		<a
-			href="/"
+			href={data.posts[0].path}
 			class="aspect-video w-full bg-slate-300 transition-all hover:rounded-md hover:border-2 hover:border-red-700 md:aspect-auto md:h-full"
 		>
 		</a>
@@ -26,7 +27,7 @@
 			</a>
 			<a
 				href="/"
-				class="hover:border-maingreen-500 aspect-video h-full w-full bg-slate-300 transition-all hover:rounded-md hover:border-2 md:aspect-auto md:h-full"
+				class="aspect-video h-full w-full bg-slate-300 transition-all hover:rounded-md hover:border-2 hover:border-maingreen-500 md:aspect-auto md:h-full"
 			>
 			</a>
 		</div>
@@ -40,15 +41,15 @@
 			More News
 		</p>
 		<div class="flex flex-col gap-2 py-4 sm:py-8">
-			{#each Array(5) as item, i (i)}
+			{#each data.posts as post, i (i)}
 				<a
-					href="/"
+					href={post.path}
 					class="flex flex-col gap-2 rounded-md p-3 transition-all hover:bg-gray-100 hover:drop-shadow sm:h-36 sm:flex-row"
 				>
 					<div class="aspect-video bg-slate-400"></div>
 					<div>
-						<h2 class="pb-2 text-2xl font-bold">Why is Ben Shapiro stupid?</h2>
-						<p>A look at the Zionist's thought mechanism.</p>
+						<h2 class="pb-2 text-2xl font-bold">{post.meta.title}</h2>
+						<p>{post.meta.description}</p>
 					</div>
 				</a>
 			{/each}

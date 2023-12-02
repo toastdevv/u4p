@@ -12,7 +12,7 @@
 				<Icon icon="solar:arrow-left-linear" class="text-5xl text-slate-100" />
 			</a>
 		</div>
-		<h1 class="text-center text-4xl font-black text-slate-100">Blog</h1>
+		<h1 class="text-center text-4xl font-black text-slate-100">News</h1>
 		<div class="p-5"></div>
 	</div>
 </div>

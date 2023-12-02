@@ -1,13 +1,16 @@
 export async function load({ params }) {
+	//@ts-ignore
 	const post = await import(`../${params.slug}.md`);
-	const { title, author, date, thumbnailUrl } = post.metadata;
+	const { name, organization, residence, occupation, date, picture } = post.metadata;
 	const content = post.default;
 
 	return {
+		name,
 		content,
-		thumbnailUrl,
-		title,
-		author,
-		date
+		picture,
+		date,
+		occupation,
+		residence,
+		organization
 	};
 }

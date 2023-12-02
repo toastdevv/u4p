@@ -1,5 +1,5 @@
-export const getEntities = async () => {
-	const allNewsFiles = import.meta.glob('/src/routes/entities/*.md');
+export const getBlogs = async () => {
+	const allNewsFiles = import.meta.glob('/src/routes/blog/*.md');
 	const iterableNewsFiles = Object.entries(allNewsFiles);
 
 	const allNews = await Promise.all(

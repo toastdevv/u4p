@@ -1,9 +1,9 @@
-import { getBlogs } from '$lib/utils/getBlogs';
+import { getNews } from '$lib/utils/getNews';
 
 export async function load() {
-	const allBlogs = await getBlogs();
+	const allNews = await getNews();
 
-	const sortedPosts = allBlogs.sort((a, b) => {
+	const sortedPosts = allNews.sort((a, b) => {
 		//@ts-ignore
 		return new Date(b.meta.date) - new Date(a.meta.date);
 	});

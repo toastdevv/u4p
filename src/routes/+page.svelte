@@ -2,6 +2,10 @@
 	import Icon from '@iconify/svelte';
 </script>
 
+<svelte:head>
+	<title>PStuff | Home</title>
+</svelte:head>
+
 <header class="coolbg semi-screen w-full">
 	<div class="flex h-full w-full items-center bg-black bg-opacity-30">
 		<div class="z-0 p-5 md:p-20">
@@ -12,11 +16,11 @@
 				<span class="py-7 font-black text-red-700">Palestine{' '}</span>
 				<span class="py-7 font-black text-gray-800">Will{' '}</span>
 				<span class="py-7 font-black text-white">Be{' '}</span>
-				<span class="text-maingreen-500 py-7 font-black">Free{' '}</span>
+				<span class="py-7 font-black text-maingreen-500">Free{' '}</span>
 			</h1>
 			<a
 				href="/about"
-				class="hover:border-b-maingreen-500 group mt-10 flex w-fit items-center justify-center gap-1 border-b-0 bg-transparent py-2 text-2xl font-semibold text-white drop-shadow-lg transition-all hover:border-b-2 hover:bg-transparent sm:text-3xl"
+				class="group mt-10 flex w-fit items-center justify-center gap-1 border-b-0 bg-transparent py-2 text-2xl font-semibold text-white drop-shadow-lg transition-all hover:border-b-2 hover:border-b-maingreen-500 hover:bg-transparent sm:text-3xl"
 			>
 				<Icon
 					icon="fa:caret-right"
