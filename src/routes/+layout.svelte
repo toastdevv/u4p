@@ -18,7 +18,7 @@
 <div
 	class="{isMenu
 		? 'pointer-events-auto opacity-100 backdrop-blur-md'
-		: 'invisible pointer-events-none opacity-0'} fixed bottom-0 left-0 right-0 top-0 z-10 flex items-center justify-center bg-white transition-all duration-300"
+		: 'pointer-events-none invisible opacity-0'} fixed bottom-0 left-0 right-0 top-0 z-10 flex items-center justify-center bg-white transition-all duration-300"
 >
 	<div class="fixed top-0 flex w-full flex-row items-center justify-end p-4">
 		<button on:click={() => (isMenu = false)}>
@@ -67,7 +67,7 @@
 	<ul class="invisible hidden md:visible md:inline-flex md:gap-8">
 		{#each navs as nav}
 			<li
-				class="hover:decoration-maingreen-600 group relative underline decoration-transparent transition-all hover:decoration-2 hover:underline-offset-2 hover:opacity-75"
+				class="group relative underline decoration-transparent transition-all hover:decoration-maingreen-600 hover:decoration-2 hover:underline-offset-2 hover:opacity-75"
 			>
 				<a href={nav.href} class="text-lg font-normal">
 					<div class="absolute flex h-full w-full justify-center">
@@ -116,6 +116,14 @@
 							class="font-normal text-gray-600 hover:text-gray-900 hover:underline"
 						>
 							Entities
+						</a>
+					</li>
+					<li class="mb-4">
+						<a
+							href="/resources"
+							class="font-normal text-gray-600 hover:text-gray-900 hover:underline"
+						>
+							Resources
 						</a>
 					</li>
 				</ul>
