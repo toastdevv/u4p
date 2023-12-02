@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
+	export let data;
 </script>
 
 <svelte:head>
@@ -19,7 +20,7 @@
 				<span class="py-7 font-black text-maingreen-500">Free{' '}</span>
 			</h1>
 			<a
-				href="/about"
+				href="/resources"
 				class="group mt-10 flex w-fit items-center justify-center gap-1 border-b-0 bg-transparent py-2 text-2xl font-semibold text-white drop-shadow-lg transition-all hover:border-b-2 hover:border-b-maingreen-500 hover:bg-transparent sm:text-3xl"
 			>
 				<Icon
@@ -51,15 +52,15 @@
 			Recent Blogs
 		</p>
 		<div class="flex flex-col gap-2 py-4 sm:py-8">
-			{#each Array(5) as item, i (i)}
+			{#each data.posts as post, i (i)}
 				<a
-					href="/"
+					href={post.path}
 					class="flex flex-col gap-2 rounded-md p-3 transition-all hover:bg-gray-100 hover:drop-shadow sm:h-36 sm:flex-row"
 				>
-					<div class="aspect-video h-36 bg-slate-400 sm:h-auto"></div>
+					<div class="aspect-video bg-slate-400"></div>
 					<div>
-						<h1 class="pb-2 text-2xl font-bold">Why is Ben Shapiro stupid?</h1>
-						<p>A look at the Zionist's thought mechanism.</p>
+						<h2 class="pb-2 text-2xl font-bold">{post.meta.title}</h2>
+						<p>{post.meta.description}</p>
 					</div>
 				</a>
 			{/each}
