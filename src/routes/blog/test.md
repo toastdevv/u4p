@@ -2,6 +2,7 @@
 title: 'Why Ben Shapiro is stupid'
 date: '2023-11-23'
 author: 'Mark Suckerberg'
+description: ':('
 thumbnailUrl: ''
 ---
 
