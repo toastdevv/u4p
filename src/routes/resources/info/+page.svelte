@@ -1,6 +1,11 @@
 <script>
 	import Icon from '@iconify/svelte';
+	import { name } from '$lib/stores';
 </script>
+
+<svelte:head>
+	<title>{$name} | Information</title>
+</svelte:head>
 
 <div class="w-full">
 	<div class="coolbg h-32 w-full">

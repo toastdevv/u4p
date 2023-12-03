@@ -2,6 +2,7 @@
 	import '$lib/styles/app.css';
 	import Icon from '@iconify/svelte';
 	import { page } from '$app/stores';
+	import { name } from '$lib/stores';
 
 	let navs = [
 		{ title: 'Home', href: '/' },
@@ -14,6 +15,10 @@
 
 	let isMenu: boolean = false;
 </script>
+
+<svelte:head>
+	<title>{$name}</title>
+</svelte:head>
 
 <div
 	class="{isMenu
@@ -55,7 +60,7 @@
 
 <nav class="flex flex-row items-center justify-between px-6 py-4">
 	<a href="/">
-		<p class="text-2xl font-bold">oooo</p>
+		<p class="text-2xl font-bold">{$name}</p>
 	</a>
 	<button
 		role="menu"
@@ -91,7 +96,7 @@
 	<div class="md:flex md:justify-between">
 		<div class="mb-6 md:mb-0">
 			<a href="/">
-				<h1 class="text-2xl font-bold">ooooo</h1>
+				<h1 class="text-2xl font-bold">{$name}</h1>
 			</a>
 		</div>
 		<div class="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">

@@ -1,9 +1,13 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
-
+	import { name as basename } from '$lib/stores';
 	export let data;
 	let { name, organization, residence, occupation, date, content } = data;
 </script>
+
+<svelte:head>
+	<title>{$basename} | {name}</title>
+</svelte:head>
 
 <div class="coolbg h-32 w-full">
 	<div class="flex h-full w-full items-center justify-between bg-black bg-opacity-30">

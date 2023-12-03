@@ -1,9 +1,13 @@
 <script>
 	import Icon from '@iconify/svelte';
 	import * as Tabs from '$lib/components/ui/tabs';
-
+	import { name } from '$lib/stores';
 	export let data;
 </script>
+
+<svelte:head>
+	<title>{$name} | Entities</title>
+</svelte:head>
 
 <header
 	class="semi-screen-xl flex w-full flex-col gap-8 bg-maingreen-900 p-6 drop-shadow-lg xl:flex-row xl:p-16"

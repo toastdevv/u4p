@@ -1,10 +1,11 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
+	import { name } from '$lib/stores';
 	export let data;
 </script>
 
 <svelte:head>
-	<title>PStuff | Home</title>
+	<title>{$name} | Home</title>
 </svelte:head>
 
 <header class="coolbg semi-screen w-full">

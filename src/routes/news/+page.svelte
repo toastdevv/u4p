@@ -1,7 +1,12 @@
 <script>
 	import Icon from '@iconify/svelte';
+	import { name } from '$lib/stores';
 	export let data;
 </script>
+
+<svelte:head>
+	<title>{$name} | News</title>
+</svelte:head>
 
 <header class="semi-screen-n flex w-full flex-col gap-8 bg-gray-500 p-8 drop-shadow-lg md:flex-row">
 	<div class="flex w-full flex-shrink flex-col drop-shadow-lg md:h-full">

@@ -1,5 +1,10 @@
 <script>
+	import { name } from '$lib/stores';
 </script>
+
+<svelte:head>
+	<title>{$name} | Disclaimer</title>
+</svelte:head>
 
 <div class="semi-screen w-full">
 	<div class="coolbg h-32 w-full">

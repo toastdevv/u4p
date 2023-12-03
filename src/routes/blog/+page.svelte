@@ -1,7 +1,12 @@
-<script lang="ts">
+<script>
 	import Icon from '@iconify/svelte';
+	import { name } from '$lib/stores';
 	export let data;
 </script>
+
+<svelte:head>
+	<title>{$name} | Blog</title>
+</svelte:head>
 
 <header class="semi-screen-n coolbg w-full drop-shadow-lg">
 	<div
@@ -30,7 +35,7 @@
 				</a>
 				<a
 					href="/"
-					class="hover:border-maingreen-500 aspect-video w-full bg-slate-300 transition-all hover:rounded-md hover:border-2 md:aspect-auto md:h-full"
+					class="aspect-video w-full bg-slate-300 transition-all hover:rounded-md hover:border-2 hover:border-maingreen-500 md:aspect-auto md:h-full"
 				>
 				</a>
 			</div>
