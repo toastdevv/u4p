@@ -18,6 +18,15 @@
 
 <svelte:head>
 	<title>{$name}</title>
+	<meta
+		name="description"
+		content="We are on a mission to expose the propaganda and hate towards Palestinians, Arabs and Muslims.
+	It's about time we take the narrative into our hands, to show the people the truth."
+	/>
+	<meta
+		name="keywords"
+		content="palestine, arabs, muslims, islamophobia, zionism, israel, anti-zionism, pro-palestine, pro-israel, anti-palestine, occupation, freedom, zionist, islam, genocide, ethnic cleansing, racism, anti-semitism, free palestine"
+	/>
 </svelte:head>
 
 <div
