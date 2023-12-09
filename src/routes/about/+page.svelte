@@ -28,7 +28,10 @@
 			<br />
 			Contact us to learn more about our humanitarian movement and to participate in it.
 		</p>
-		<h1 class="mb-4 mt-5 flex items-center gap-2 text-2xl font-bold md:mt-6 md:text-3xl">
+		<h1
+			id="social-media"
+			class="mb-4 mt-5 flex items-center gap-2 text-2xl font-bold md:mt-6 md:text-3xl"
+		>
 			<Icon icon="fa:caret-right" class="text-4xl" />
 			Social Media
 		</h1>

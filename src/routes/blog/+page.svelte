@@ -8,40 +8,41 @@
 	<title>{$name} | Blog</title>
 </svelte:head>
 
-<header class="semi-screen-n coolbg w-full drop-shadow-lg">
-	<div
-		class="flex w-full flex-shrink flex-col gap-8 bg-black bg-opacity-20 p-4 drop-shadow-lg md:h-full md:flex-row md:p-8"
-	>
-		<div class="flex h-full w-full flex-col">
-			<h1 class="mb-5 text-5xl font-black text-slate-100">Latest Post</h1>
-			<a
-				href={data.posts[0].path}
-				class="aspect-video w-full bg-slate-300 transition-all hover:rounded-md hover:border-2 hover:border-red-700 md:aspect-auto md:h-full"
-			>
-			</a>
-		</div>
-		<div class="flex w-full flex-col md:h-full md:w-96">
-			<h1 class="mb-4 mt-3 text-4xl font-black text-slate-100">More Posts</h1>
-			<div class="flex h-full flex-col gap-3 p-2 md:gap-2 md:p-0">
-				<a
-					href="/"
-					class="aspect-video w-full bg-slate-300 transition-all hover:rounded-md hover:border-2 hover:border-gray-800 md:aspect-auto md:h-full"
-				>
-				</a>
-				<a
-					href="/"
-					class="aspect-video w-full bg-slate-300 transition-all hover:rounded-md hover:border-2 hover:border-white md:aspect-auto md:h-full"
-				>
-				</a>
-				<a
-					href="/"
-					class="aspect-video w-full bg-slate-300 transition-all hover:rounded-md hover:border-2 hover:border-maingreen-500 md:aspect-auto md:h-full"
-				>
-				</a>
-			</div>
-		</div>
-	</div>
-</header>
+<div class="coolbg p-4">
+	<header class="coolgrid w-full rounded-md bg-black bg-opacity-5 p-8 drop-shadow-lg">
+		<h1 class="mb-5 text-5xl font-black text-slate-100">Latest News</h1>
+		<h1
+			class="row-start-3 row-end-4 mb-4 mt-3 text-4xl font-black text-slate-100 lg:row-start-auto lg:row-end-auto"
+		>
+			More Articles
+		</h1>
+		<a
+			href={data.posts[0].path}
+			class="row-start-2 row-end-3 bg-slate-300 transition-all hover:rounded-md hover:border-2 hover:border-red-700 lg:col-start-1 lg:col-end-2 lg:row-start-2 lg:row-end-5"
+		>
+			<img
+				src={data.posts[0].meta.thumbnailUrl}
+				alt={data.posts[0].meta.title}
+				class="aspect-video h-full w-full grow-0 object-cover"
+			/>
+		</a>
+		<a
+			href="/"
+			class="aspect-video bg-slate-300 transition-all hover:rounded-md hover:border-2 hover:border-gray-800"
+		>
+		</a>
+		<a
+			href="/"
+			class="aspect-video bg-slate-300 transition-all hover:rounded-md hover:border-2 hover:border-gray-800"
+		>
+		</a>
+		<a
+			href="/"
+			class="aspect-video bg-slate-300 transition-all hover:rounded-md hover:border-2 hover:border-gray-800"
+		>
+		</a>
+	</header>
+</div>
 
 <main class="flex flex-col justify-evenly gap-16 p-8 md:gap-28 md:p-24">
 	<div>
@@ -55,7 +56,13 @@
 					href={post.path}
 					class="flex flex-col gap-2 rounded-md p-3 transition-all hover:bg-gray-100 hover:drop-shadow sm:h-36 sm:flex-row"
 				>
-					<div class="aspect-video bg-slate-400"></div>
+					<div class="aspect-video bg-slate-400">
+						<img
+							src={post.meta.thumbnailUrl}
+							alt={post.meta.title}
+							class="aspect-video h-full w-full grow-0 object-cover"
+						/>
+					</div>
 					<div>
 						<h2 class="pb-2 text-2xl font-bold">{post.meta.title}</h2>
 						<p>{post.meta.description}</p>

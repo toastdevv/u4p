@@ -43,7 +43,7 @@
 			<br />
 			If you know any organization, individual, or any entity that has taken part into discrimination
 			against Muslims, Arabs or Palestinians, you can contact us
-			<a href="/" class="underline">here</a>.
+			<a href="/about#social-media" class="underline">here</a>.
 		</p>
 	</div>
 	<hr class="bg-gray-300" />

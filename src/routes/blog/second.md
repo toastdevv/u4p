@@ -3,7 +3,7 @@ title: 'Why Ben Shapiro is not stupid'
 description: 'he stupid dont believe him'
 date: '2023-11-23'
 author: 'Mark Suckerberg'
-thumbnailUrl: ''
+thumbnailUrl: '/psflag.jpg'
 ---
 
 If you haven't noticed yet, Ben Shapiro is stupid.

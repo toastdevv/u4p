@@ -19,6 +19,7 @@
 				href={data.pros[0].path}
 				class="aspect-video w-full bg-slate-300 transition-all hover:rounded-md hover:border-2 hover:border-red-700 xl:h-full"
 			>
+				<img src="/jordan.jpg" alt="lol" class="aspect-video h-full w-full grow-0 object-cover" />
 			</a>
 			<div>
 				<h1 class="mb-6 text-3xl font-black text-slate-100">Bro thought he slick</h1>
