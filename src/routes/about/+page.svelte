@@ -1,6 +1,6 @@
 <script>
 	import Icon from '@iconify/svelte';
-	import { name } from '$lib/stores';
+	import { name, fullName } from '$lib/stores';
 </script>
 
 <svelte:head>
@@ -15,7 +15,8 @@
 	</div>
 	<div class="p-8 md:p-28">
 		<p class="indent-3 text-xl">
-			This website was created to expose Israeli propaganda, lies, fake news and misinformation.
+			We are {$fullName} ({$name}). We are on a mission to expose Israeli propaganda, lies, fake
+			news and misinformation.
 			<br />
 			It was also created to condemn the Zionist individuals, professors, politicians and organizations
 			who have been spreading hate, racism and Islamophobia towards the Arabic nations.

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
-	import { name } from '$lib/stores';
+	import { name, fullName } from '$lib/stores';
 	export let data;
 </script>
 
@@ -37,8 +37,9 @@
 <main class="flex flex-col justify-evenly gap-14 p-8 md:gap-28 md:p-32">
 	<div>
 		<p class="text-2xl font-medium md:text-3xl">
-			We are on a mission to expose the propaganda and hate towards Palestinians, Arabs and Muslims.
-			It's about time we take the narrative into our hands, to show the people the truth.
+			We are {$fullName} ({$name}). We are on a mission to expose the propaganda and hate towards
+			Palestinians, Arabs and Muslims. It's about time we take the narrative into our hands, to show
+			the people the truth.
 			<br />
 			<br />
 			If you know any organization, individual, or any entity that has taken part into discrimination
