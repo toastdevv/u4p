@@ -6,10 +6,13 @@
 
 	let navs = [
 		{ title: 'Home', href: '/' },
-		{ title: 'News', href: '/news' },
-		{ title: 'Blog', href: '/blog' },
-		{ title: 'Entities', href: '/entities' },
-		{ title: 'Disclaimer', href: '/disclaimer' },
+		{ title: 'Resources', href: '/resources' },
+		{ title: 'Introduction', href: '/resources/info' },
+		{ title: 'Gallery', href: '/resources/gallery' },
+		// { title: 'News', href: '/news' },
+		// { title: 'Blog', href: '/blog' },
+		// { title: 'Entities', href: '/entities' },
+		// { title: 'Disclaimer', href: '/disclaimer' },
 		{ title: 'About Us', href: '/about' }
 	];
 
@@ -108,13 +111,29 @@
 				<h1 class="text-2xl font-bold">{$name}</h1>
 			</a>
 		</div>
-		<div class="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
+		<div class="grid grid-cols-2 gap-8 sm:grid-cols-2 sm:gap-8">
 			<div>
 				<h2 class="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
 					Resources
 				</h2>
 				<ul>
 					<li class="mb-4">
+						<a
+							href="/resources/info"
+							class="font-normal text-gray-600 hover:text-gray-900 hover:underline"
+						>
+							Introduction
+						</a>
+					</li>
+					<li class="mb-4">
+						<a
+							href="/resources/gallery"
+							class="font-normal text-gray-600 hover:text-gray-900 hover:underline"
+						>
+							Gallery
+						</a>
+					</li>
+					<!-- <li class="mb-4">
 						<a href="/news" class="font-normal text-gray-600 hover:text-gray-900 hover:underline">
 							News
 						</a>
@@ -131,10 +150,10 @@
 						>
 							Entities
 						</a>
-					</li>
+					</li> -->
 				</ul>
 			</div>
-			<div>
+			<!-- <div>
 				<h2 class="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
 					Follow us
 				</h2>
@@ -155,41 +174,46 @@
 						</a>
 					</li>
 				</ul>
-			</div>
+			</div> -->
 			<div>
 				<h2 class="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
 					Information
 				</h2>
 				<ul>
 					<li class="mb-4">
+						<a href="/" class="font-normal text-gray-600 hover:text-gray-900 hover:underline">
+							Home
+						</a>
+					</li>
+					<li class="mb-4">
 						<a href="/about" class="font-normal text-gray-600 hover:text-gray-900 hover:underline">
 							About Us
 						</a>
 					</li>
-					<li class="mb-4">
+					<!-- <li class="mb-4">
 						<a
 							href="/disclaimer"
 							class="font-normal text-gray-600 hover:text-gray-900 hover:underline"
 						>
 							Disclaimer
 						</a>
-					</li>
-					<li class="mb-4">
+					</li> -->
+					<!-- <li class="mb-4">
 						<a
 							href="/resources"
 							class="font-normal text-gray-600 hover:text-gray-900 hover:underline"
 						>
 							Resources
 						</a>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 		</div>
 	</div>
 	<hr class="my-6 border-gray-200 dark:border-gray-700 sm:mx-auto lg:my-8" />
 	<div class="sm:flex sm:items-center sm:justify-between">
-		<p class="text-base text-gray-500">© 2023 ooooo All Rights Reserved.</p>
-		<div class="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
+		<p class="text-base text-gray-500">© 2023 {$name} All Rights Reserved.</p>
+		<!-- <div class="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
 			<a href="/">
 				<Icon
 					icon="mdi:instagram"
@@ -208,6 +232,6 @@
 					class="h-5 w-5 text-gray-500 hover:text-gray-900 dark:text-gray-500 dark:hover:text-white"
 				/>
 			</a>
-		</div>
+		</div> -->
 	</div>
 </footer>

@@ -18,16 +18,12 @@
 			We are {$fullName} ({$name}). We are on a mission to expose Israeli propaganda, lies, fake
 			news and misinformation.
 			<br />
-			It was also created to condemn the Zionist individuals, professors, politicians and organizations
-			who have been spreading hate, racism and Islamophobia towards the Arabic nations.
+			<br />
+			As members of the pro-Palestine community, we are entitled to show our firm oppositon to the Zionist
+			occupation. If you are interested into supporting our cause, we invite you to join our online community.
 			<br />
 			<br />
-			As members of the pro-Palestine community, we have the right to protest and resist the Zionist
-			occupation, so if you are interested into the Palestinian issue, we invite you to join us in our
-			online protest.
-			<br />
-			<br />
-			Contact us to learn more about our humanitarian movement and to participate in it.
+			Contact us to learn more about our humanitarian movement and how you can participate in it.
 		</p>
 		<h1
 			id="social-media"
@@ -37,9 +33,14 @@
 			Social Media
 		</h1>
 		<ul class="ms-4 list-disc">
-			<li><p class="my-3 font-semibold underline md:text-xl"><a href="/">Facebook</a></p></li>
+			<!-- <li><p class="my-3 font-semibold underline md:text-xl"><a href="/">Facebook</a></p></li>
 			<li><p class="my-3 font-semibold underline md:text-xl"><a href="/">Instagram</a></p></li>
-			<li><p class="my-3 font-semibold underline md:text-xl"><a href="/">X</a></p></li>
+			<li><p class="my-3 font-semibold underline md:text-xl"><a href="/">X</a></p></li> -->
+			<li>
+				<p class="my-3 font-semibold underline md:text-xl">
+					<a href="https://discord.gg/DzGtpsCXD3">Discord</a>
+				</p>
+			</li>
 		</ul>
 	</div>
 </div>

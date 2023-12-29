@@ -1,6 +1,21 @@
 <script>
 	import Icon from '@iconify/svelte';
 	import { name } from '$lib/stores';
+
+	const links = [
+		{
+			title: 'Introduction to Palestine',
+			link: 'https://mega.nz/file/1LMwjb7A#TEZf4bWMvN0IPn7JeCymkWWGELkr7wNMhxlJgpX_lTs'
+		},
+		{
+			title: 'Zionist History',
+			link: 'https://mega.nz/file/BaMkDCbI#Gywb0xX4JPaLM3dnMSiTSR026BRVR-5-PUqq1mhIhSw'
+		},
+		{
+			title: 'Israeli government group chats leaked (and more refutations to Zionism)',
+			link: 'https://mega.nz/file/daNnSYbC#vcRdjoVs8oQg5O-RUguk6_6nbMAmB44aekT-E5BCaJY'
+		}
+	];
 </script>
 
 <svelte:head>
@@ -26,30 +41,16 @@
 		</h1>
 		<h1 class="mb-4 mt-5 flex items-center gap-2 text-2xl font-bold md:mt-6 md:text-3xl">
 			<Icon icon="fa:caret-right" class="text-3xl" />
-			History
+			Documents
 		</h1>
-		<p class="py-1 text-xl">
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptatem consectetur
-			consequuntur vero placeat laudantium officia blanditiis explicabo totam voluptatibus minus
-			molestias, quia sequi a sapiente delectus. Obcaecati, cumque laudantium.
-		</p>
-		<h1 class="mb-4 mt-5 flex items-center gap-2 text-2xl font-bold md:mt-6 md:text-3xl">
-			<Icon icon="fa:caret-right" class="text-2xl" />
-			A mandate nobody asked for
-		</h1>
-		<p class="py-1 text-xl">
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptatem consectetur
-			consequuntur vero placeat laudantium officia blanditiis explicabo totam voluptatibus minus
-			molestias, quia sequi a sapiente delectus. Obcaecati, cumque laudantium.
-		</p>
-		<h1 class="mb-4 mt-5 flex items-center gap-2 text-2xl font-bold md:mt-6 md:text-3xl">
-			<Icon icon="fa:caret-right" class="text-2xl" />
-			Jews!
-		</h1>
-		<p class="py-1 text-xl">
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptatem consectetur
-			consequuntur vero placeat laudantium officia blanditiis explicabo totam voluptatibus minus
-			molestias, quia sequi a sapiente delectus. Obcaecati, cumque laudantium.
-		</p>
+		<ul class="ms-4 list-disc">
+			{#each links as link, i (i)}
+				<li>
+					<p class="my-4 font-semibold underline md:text-xl">
+						<a href={link.link}>{link.title}</a>
+					</p>
+				</li>
+			{/each}
+		</ul>
 	</div>
 </div>

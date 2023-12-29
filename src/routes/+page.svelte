@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
 	import { name, fullName } from '$lib/stores';
-	export let data;
+	// export let data;
 </script>
 
 <svelte:head>
@@ -42,13 +42,15 @@
 			the people the truth.
 			<br />
 			<br />
-			If you know any organization, individual, or any entity that has taken part into discrimination
+			<!-- If you know any organization, individual, or any entity that has taken part into discrimination
 			against Muslims, Arabs or Palestinians, you can contact us
+			<a href="/about#social-media" class="underline">here</a>. -->
+			If you have any valuable resources you think would be valuable to the page, you may contact us
 			<a href="/about#social-media" class="underline">here</a>.
 		</p>
 	</div>
 	<hr class="bg-gray-300" />
-	<div>
+	<!-- <div>
 		<p class="flex items-center gap-2 text-3xl font-bold sm:text-4xl">
 			<Icon icon="fa:caret-right" class="text-4xl" />
 			Recent Blogs
@@ -67,5 +69,5 @@
 				</a>
 			{/each}
 		</div>
-	</div>
+	</div> -->
 </main>

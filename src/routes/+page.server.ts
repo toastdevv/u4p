@@ -1,12 +1,12 @@
-import { getBlogs } from '$lib/utils/getBlogs';
+// import { getBlogs } from '$lib/utils/getBlogs';
 
-export async function load() {
-	const allBlogs = await getBlogs();
+// export async function load() {
+// 	const allBlogs = await getBlogs();
 
-	const sortedPosts = allBlogs.sort((a, b) => {
-		//@ts-ignore
-		return new Date(b.meta.date) - new Date(a.meta.date);
-	});
+// 	const sortedPosts = allBlogs.sort((a, b) => {
+// 		//@ts-ignore
+// 		return new Date(b.meta.date) - new Date(a.meta.date);
+// 	});
 
-	return { posts: sortedPosts };
-}
+// 	return { posts: sortedPosts };
+// }

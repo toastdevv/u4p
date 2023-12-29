@@ -5,6 +5,10 @@
 
 	const videos = [
 		{
+			title: 'Package of videos hosted on Mega.nz',
+			link: 'https://mega.nz/folder/YXE2lSJK#MgKFDUF1d8d5zPXvd8wIwQ'
+		},
+		{
 			title: 'Palestine in 1896',
 			link: 'https://youtu.be/1vaIK8wlAl0?si=MCT3aW_qosgydbn0'
 		},
@@ -19,6 +23,16 @@
 		{
 			title: 'Tantura (Movie)',
 			link: 'https://www.imdb.com/title/tt16378034/?ref_=nm_flmg_t_1_dr'
+		},
+		{
+			title:
+				'Israeli soldiers blow up a building in Gaza Strip as festive gifts on the occasion of Hanukkah',
+			link: 'https://www.instagram.com/p/C0xE1f-K23_/'
+		},
+		{
+			title:
+				'Hebron, the West Bank | The Israeli Military, against humanitarian law, and its own law, detained an 8 year old without the presence of his parents to interogate him down a locked alleyway.',
+			link: 'https://www.instagram.com/p/C0tu0ouM7iW/'
 		}
 	];
 
@@ -50,10 +64,115 @@
 		{
 			title: '"Nakba Law" - Amendment No. 40 to the Budgets Foundations Law ',
 			link: 'https://www.adalah.org/en/law/view/496'
+		},
+		{
+			title: 'Canaan (origins of Palestine, not Israelites)',
+			link: 'https://www.britannica.com/place/Canaan-historical-region-Middle-East'
+		},
+		{
+			title: 'Safsaf Massacre',
+			link: 'https://en.wikipedia.org/wiki/Safsaf_massacre'
+		},
+		{
+			title: 'Kafr Qasim Massacre',
+			link: 'https://en.wikipedia.org/wiki/Kafr_Qasim_massacre'
+		},
+		{
+			title: 'Eilabun Massacre',
+			link: 'https://en.wikipedia.org/wiki/Eilabun_massacre'
+		},
+		{
+			title: 'Saliha',
+			link: 'https://en.wikipedia.org/wiki/Saliha'
+		},
+		{
+			title: 'Hula Massacre',
+			link: 'https://en.wikipedia.org/wiki/Hula_massacre'
+		},
+		{
+			title: 'Qana Massacre',
+			link: 'https://en.m.wikipedia.org/wiki/Qana_massacre'
+		},
+		{
+			title: 'Rafah Massacre',
+			link: 'https://en.wikipedia.org/wiki/Rafah_massacre'
+		},
+		{
+			title: 'Siege of Tel al-Zaatar',
+			link: 'https://en.wikipedia.org/wiki/Siege_of_Tel_al-Zaatar'
+		},
+		{
+			title: 'Sabra and Shatila Massacre',
+			link: 'https://simple.wikipedia.org/wiki/Sabra_and_Shatila_massacre'
+		},
+		{
+			title: 'Balad al-Shaykh Massacre',
+			link: 'https://en.wikipedia.org/wiki/Balad_al-Shaykh_massacre'
+		},
+		{
+			title: 'Explainer: The Deir Yassin Massacre',
+			link: 'https://imeu.org/article/explainer-the-deir-yassin-massacre'
+		},
+		{
+			title:
+				'A history stained with innocent blood: A chronicle of Israel’s massacres in Palestine',
+			link: 'https://english.ahram.org.eg/News/510520.aspx'
+		},
+		{
+			title: 'Abu Susha',
+			link: 'https://en.wikipedia.org/wiki/Abu_Shusha'
+		},
+		{
+			title: 'Tantura Massacre',
+			link: 'https://en.wikipedia.org/wiki/Tantura_massacre'
+		},
+		{
+			title: 'Remembering the Qibya massacre of 1953',
+			link: 'https://english.wafa.ps/Pages/Details/126449'
+		},
+		{
+			title: 'Qibya Massacre',
+			link: 'https://en.wikipedia.org/wiki/Qibya_massacre'
+		},
+		{
+			title: 'Tomorrow .. The anniversary of the massacre of the Center in Qalqilya',
+			link: 'https://www.palpress.net/News/3838'
+		},
+		{
+			title: 'Kafr Qasim Massacre',
+			link: 'https://en.wikipedia.org/wiki/Kafr_Qasim_massacre'
+		},
+		{
+			title: 'Khan Yunis Massacre',
+			link: 'https://en.wikipedia.org/wiki/Khan_Yunis_massacre'
+		},
+		{
+			title: '1990 Temple Mount killings',
+			link: 'https://en.wikipedia.org/wiki/1990_Temple_Mount_killings'
+		},
+		{
+			title: 'Cave of the Patriarchs Massacre (this resulted in the Hamas we know today)',
+			link: 'https://en.wikipedia.org/wiki/Cave_of_the_Patriarchs_massacre'
+		},
+		{
+			title: 'Battle of Jenin (2002)',
+			link: 'https://en.wikipedia.org/wiki/Battle_of_Jenin_(2002)'
 		}
 	];
 
 	const books = [
+		{
+			title: 'Introduction to Palestine',
+			link: 'https://mega.nz/file/1LMwjb7A#TEZf4bWMvN0IPn7JeCymkWWGELkr7wNMhxlJgpX_lTs'
+		},
+		{
+			title: 'Zionist History',
+			link: 'https://mega.nz/file/BaMkDCbI#Gywb0xX4JPaLM3dnMSiTSR026BRVR-5-PUqq1mhIhSw'
+		},
+		{
+			title: 'Israeli government group chats leaked (and more refutations to Zionism)',
+			link: 'https://mega.nz/file/daNnSYbC#vcRdjoVs8oQg5O-RUguk6_6nbMAmB44aekT-E5BCaJY'
+		},
 		{
 			title: 'Dissection of the Israeli mind (in Arabic)',
 			link: 'https://www.goodreads.com/book/show/18386339'
@@ -88,6 +207,9 @@
 	const images = {
 		prefix: '/resources/gallery/images/',
 		images: [
+			{
+				src: 'jaffa1937.jpg'
+			},
 			{
 				src: 'workpermit.jpg'
 			},
@@ -180,10 +302,10 @@
 		</ul>
 		<h1 class="mb-4 mt-5 flex items-center gap-2 text-2xl font-bold md:mt-6 md:text-3xl">
 			<Icon icon="fa:caret-right" class="text-3xl" />
-			Books
+			Books (and PDFs)
 		</h1>
 		<ul class="ms-4 list-disc">
-			{#each videos as link, i (i)}
+			{#each books as link, i (i)}
 				<li>
 					<p class="my-4 font-semibold underline md:text-xl">
 						<a href={link.link}>{link.title}</a>

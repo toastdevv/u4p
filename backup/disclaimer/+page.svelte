@@ -38,8 +38,8 @@
 			</li>
 			<li>
 				We support the Palestinian resistance in all of its forms. However, we do not condone the
-				death of any innocent civilians on both sides, just to make sure that is clear. So as long
-				as resistance leaves civilians out of the equation, we will support it. Keep that in mind.
+				death of any innocent civilians on both sides, just to make sure that is clear. As long as
+				resistance leaves civilians out of the equation, we will support it.
 			</li>
 		</ol>
 	</div>
