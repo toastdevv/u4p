@@ -25,9 +25,9 @@
 		</h1>
 		<ul class="ms-4 list-disc">
 			<li><p class="my-4 font-semibold underline md:text-xl"><a href="/about">About Us</a></p></li>
-			<li>
+			<!-- <li>
 				<p class="my-4 font-semibold underline md:text-xl"><a href="/disclaimer">Disclaimer</a></p>
-			</li>
+			</li> -->
 		</ul>
 		<h1 class="mb-4 mt-5 flex items-center gap-2 text-2xl font-bold md:mt-6 md:text-3xl">
 			<Icon icon="fa:caret-right" class="text-3xl" />
