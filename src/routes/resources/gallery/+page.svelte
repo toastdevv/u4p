@@ -255,6 +255,7 @@
 
 <svelte:head>
 	<title>{$name} | Gallery</title>
+	<meta name="og:title" content="{$name} | Gallery" />
 </svelte:head>
 
 <div class="w-full">

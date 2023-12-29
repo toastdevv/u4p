@@ -6,6 +6,7 @@
 
 <svelte:head>
 	<title>{$name} | Home</title>
+	<meta name="og:title" content="{$name} | Home" />
 </svelte:head>
 
 <header class="coolbg semi-screen w-full">

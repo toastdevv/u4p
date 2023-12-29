@@ -20,6 +20,7 @@
 
 <svelte:head>
 	<title>{$name} | Information</title>
+	<meta name="og:title" content="{$name} | Information" />
 </svelte:head>
 
 <div class="w-full">

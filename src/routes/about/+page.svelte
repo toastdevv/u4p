@@ -5,6 +5,7 @@
 
 <svelte:head>
 	<title>{$name} | About Us</title>
+	<meta name="og:title" content="{$name} | About Us" />
 </svelte:head>
 
 <div class="w-full">
