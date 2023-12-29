@@ -212,7 +212,7 @@
 	</div>
 	<hr class="my-6 border-gray-200 dark:border-gray-700 sm:mx-auto lg:my-8" />
 	<div class="sm:flex sm:items-center sm:justify-between">
-		<p class="text-base text-gray-500">© 2023 {$name} All Rights Reserved.</p>
+		<p class="text-base text-gray-500">© 2023 All Rights Reserved.</p>
 		<!-- <div class="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
 			<a href="/">
 				<Icon

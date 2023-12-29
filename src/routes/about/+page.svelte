@@ -1,6 +1,6 @@
 <script>
 	import Icon from '@iconify/svelte';
-	import { name, fullName } from '$lib/stores';
+	import { name } from '$lib/stores';
 </script>
 
 <svelte:head>
@@ -15,8 +15,8 @@
 	</div>
 	<div class="p-8 md:p-28">
 		<p class="indent-3 text-xl">
-			We are {$fullName} ({$name}). We are on a mission to expose Israeli propaganda, lies, fake
-			news and misinformation.
+			We are {$name}. We are on a mission to expose Israeli propaganda, lies, fake news and
+			misinformation.
 			<br />
 			<br />
 			As members of the pro-Palestine community, we are entitled to show our firm oppositon to the Zionist
