@@ -205,7 +205,7 @@
 	];
 
 	const images = {
-		prefix: '/resources/gallery/images/',
+		prefix: '/resources/images/',
 		images: [
 			{
 				src: 'jaffa1937.jpg'

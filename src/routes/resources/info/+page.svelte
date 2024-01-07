@@ -5,15 +5,15 @@
 	const links = [
 		{
 			title: 'Introduction to Palestine',
-			link: 'https://mega.nz/file/1LMwjb7A#TEZf4bWMvN0IPn7JeCymkWWGELkr7wNMhxlJgpX_lTs'
+			link: '/resources/documents/intropalestine.pdf'
 		},
 		{
 			title: 'Zionist History',
-			link: 'https://mega.nz/file/BaMkDCbI#Gywb0xX4JPaLM3dnMSiTSR026BRVR-5-PUqq1mhIhSw'
+			link: '/resources/documents/zionismhistory.pdf'
 		},
 		{
 			title: 'Israeli government group chats leaked (and more refutations to Zionism)',
-			link: 'https://mega.nz/file/daNnSYbC#vcRdjoVs8oQg5O-RUguk6_6nbMAmB44aekT-E5BCaJY'
+			link: '/resources/documents/badzio.pdf'
 		}
 	];
 </script>
