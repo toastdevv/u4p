@@ -33,6 +33,27 @@
 			title:
 				'Hebron, the West Bank | The Israeli Military, against humanitarian law, and its own law, detained an 8 year old without the presence of his parents to interogate him down a locked alleyway.',
 			link: 'https://www.instagram.com/p/C0tu0ouM7iW/'
+		},
+		{
+			title: "It's official (GDF video of crimes committed by Israel in Gaza)",
+			link: 'https://www.youtube.com/watch?v=s7RFKXSyjvo'
+		},
+		{
+			title:
+				'Exclusive footage obtained by Middle East Eye shows a Palestinian woman being shot by Israeli forces in the streets of Gaza City’s centre on 12 November, as she and others attempted to evacuate the area while holding white flags amid the intense Israeli assault on northern Gaza.',
+			link: 'https://www.instagram.com/p/C12VTIZq7zM/'
+		},
+		{
+			title: 'Was the Gaza hospital attack caused by a failed rocket launch?',
+			link: 'https://www.youtube.com/watch?v=yyNLvL_8SeY'
+		},
+		{
+			title: "Israel's changing narrative on hospital bombing.",
+			link: 'https://www.youtube.com/watch?v=60EK-3-kGLI'
+		},
+		{
+			title: 'How the Muslims rescued the Jews',
+			link: 'https://youtu.be/afkpfnf1Ixc'
 		}
 	];
 
@@ -98,10 +119,6 @@
 			link: 'https://en.wikipedia.org/wiki/Rafah_massacre'
 		},
 		{
-			title: 'Siege of Tel al-Zaatar',
-			link: 'https://en.wikipedia.org/wiki/Siege_of_Tel_al-Zaatar'
-		},
-		{
 			title: 'Sabra and Shatila Massacre',
 			link: 'https://simple.wikipedia.org/wiki/Sabra_and_Shatila_massacre'
 		},
@@ -157,6 +174,24 @@
 		{
 			title: 'Battle of Jenin (2002)',
 			link: 'https://en.wikipedia.org/wiki/Battle_of_Jenin_(2002)'
+		},
+		{
+			title:
+				'State Officials Fear International Court of Justice Could Charge Israel With Genocide in Gaza',
+			link: 'https://www.haaretz.com/israel-news/2024-01-01/ty-article/.premium/state-officials-fear-hauge-could-charge-israel-with-genocide-in-gaza/0000018c-c1a9-d3e0-abac-d9a9acd80000'
+		},
+		{
+			title:
+				'The many, many times Israelis and Palestinians tried to make peace — and failed (Yasser Arafat recognises Israel)',
+			link: 'https://www.vox.com/world-politics/2023/11/22/23971375/israel-palestine-peace-talks-deal-timeline'
+		},
+		{
+			title: 'Is Hamas.com a website for Hamas?',
+			link: 'https://www.snopes.com/fact-check/hamas-website/'
+		},
+		{
+			title: 'How Israel Buys Support From Celebrities And Influencers',
+			link: 'https://www.youtube.com/watch?v=ma1autOZcPc'
 		}
 	];
 
@@ -218,6 +253,15 @@
 			},
 			{
 				src: 'publicrelations.png'
+			},
+			{
+				src: 'warcrime.png'
+			},
+			{
+				src: 'killedbaby.png'
+			},
+			{
+				src: 'jewishrefugees.jpg'
 			},
 			{
 				src: 'balfourdeclaration.jpg'
