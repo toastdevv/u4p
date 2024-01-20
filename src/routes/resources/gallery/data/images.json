@@ -1,0 +1,56 @@
+{
+	"prefix": "/resources/images/",
+	"images": [
+		{
+			"src": "jaffa1937.jpg"
+		},
+		{
+			"src": "workpermit.jpg"
+		},
+		{
+			"src": "shakespear.jpg"
+		},
+		{
+			"src": "publicrelations.png"
+		},
+		{
+			"src": "warcrime.png"
+		},
+		{
+			"src": "killedbaby.png"
+		},
+		{
+			"src": "jewishrefugees.jpg"
+		},
+		{
+			"src": "balfourdeclaration.jpg"
+		},
+		{
+			"src": "banner.jpeg"
+		},
+		{
+			"src": "dirtyplan.png"
+		},
+		{
+			"src": "documents.jpg"
+		},
+		{
+			"src": "exidf.jpeg"
+		},
+		{
+			"src": "handshake.jpg"
+		},
+		{
+			"src": "hypocrites.jpg"
+		},
+		{
+			"src": "palestinenewspaper.jpg"
+		},
+		{
+			"src": "palestinemap.jpeg"
+		},
+		{
+			"src": "israelsexualassault.jpg"
+		}
+	]
+}
