@@ -14,6 +14,10 @@
 		{
 			title: 'Israeli government group chats leaked (and more refutations to Zionism)',
 			link: '/resources/documents/badzio.pdf'
+		},
+		{
+			title: 'Our Narrative: Operation Al-Aqsa Flood',
+			link: '/resources/documents/ournarrative.pdf'
 		}
 	];
 </script>

@@ -9,10 +9,6 @@
 		{ title: 'Resources', href: '/resources' },
 		{ title: 'Introduction', href: '/resources/info' },
 		{ title: 'Gallery', href: '/resources/gallery' },
-		// { title: 'News', href: '/news' },
-		// { title: 'Blog', href: '/blog' },
-		// { title: 'Entities', href: '/entities' },
-		// { title: 'Disclaimer', href: '/disclaimer' },
 		{ title: 'About Us', href: '/about' }
 	];
 
@@ -110,7 +106,11 @@
 	<div class="md:flex md:justify-between">
 		<div class="mb-6 md:mb-0">
 			<a href="/">
-				<h1 class="text-2xl font-bold">{$name}</h1>
+				<p class="flex flex-row items-center justify-between text-2xl font-bold">
+					<img src="/favicon.png" class="mr-3 h-6 w-6 object-contain" alt="logo" />
+					{$name}
+					<img src="/favicon.png" class="ml-3 h-6 w-6 object-contain" alt="logo" />
+				</p>
 			</a>
 		</div>
 		<div class="grid grid-cols-2 gap-8 sm:grid-cols-2 sm:gap-8">
@@ -135,48 +135,8 @@
 							Gallery
 						</a>
 					</li>
-					<!-- <li class="mb-4">
-						<a href="/news" class="font-normal text-gray-600 hover:text-gray-900 hover:underline">
-							News
-						</a>
-					</li>
-					<li class="mb-4">
-						<a href="/blog" class="font-normal text-gray-600 hover:text-gray-900 hover:underline">
-							Blog
-						</a>
-					</li>
-					<li class="mb-4">
-						<a
-							href="/entities"
-							class="font-normal text-gray-600 hover:text-gray-900 hover:underline"
-						>
-							Entities
-						</a>
-					</li> -->
 				</ul>
 			</div>
-			<!-- <div>
-				<h2 class="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
-					Follow us
-				</h2>
-				<ul>
-					<li class="mb-4">
-						<a href="/" class="font-normal text-gray-600 hover:text-gray-900 hover:underline">
-							Instagram
-						</a>
-					</li>
-					<li class="mb-4">
-						<a href="/" class="font-normal text-gray-600 hover:text-gray-900 hover:underline">
-							Twitter
-						</a>
-					</li>
-					<li class="mb-4">
-						<a href="/" class="font-normal text-gray-600 hover:text-gray-900 hover:underline">
-							Facebook
-						</a>
-					</li>
-				</ul>
-			</div> -->
 			<div>
 				<h2 class="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
 					Information
@@ -192,22 +152,6 @@
 							About Us
 						</a>
 					</li>
-					<!-- <li class="mb-4">
-						<a
-							href="/disclaimer"
-							class="font-normal text-gray-600 hover:text-gray-900 hover:underline"
-						>
-							Disclaimer
-						</a>
-					</li> -->
-					<!-- <li class="mb-4">
-						<a
-							href="/resources"
-							class="font-normal text-gray-600 hover:text-gray-900 hover:underline"
-						>
-							Resources
-						</a>
-					</li> -->
 				</ul>
 			</div>
 		</div>
@@ -215,25 +159,5 @@
 	<hr class="my-6 border-gray-200 dark:border-gray-700 sm:mx-auto lg:my-8" />
 	<div class="sm:flex sm:items-center sm:justify-between">
 		<p class="text-base text-gray-500">© 2023 All Rights Reserved.</p>
-		<!-- <div class="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-			<a href="/">
-				<Icon
-					icon="mdi:instagram"
-					class="h-5 w-5 text-gray-500 hover:text-gray-900 dark:text-gray-500 dark:hover:text-white"
-				/>
-			</a>
-			<a href="/">
-				<Icon
-					icon="fa6-brands:x-twitter"
-					class="h-5 w-5 text-gray-500 hover:text-gray-900 dark:text-gray-500 dark:hover:text-white"
-				/>
-			</a>
-			<a href="/">
-				<Icon
-					icon="ri:facebook-fill"
-					class="h-5 w-5 text-gray-500 hover:text-gray-900 dark:text-gray-500 dark:hover:text-white"
-				/>
-			</a>
-		</div> -->
 	</div>
 </footer>

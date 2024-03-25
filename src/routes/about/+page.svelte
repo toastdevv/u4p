@@ -15,16 +15,10 @@
 		</div>
 	</div>
 	<div class="p-8 md:p-28">
-		<p class="indent-3 text-xl">
-			We are {$name}. We are on a mission to expose Israeli propaganda, lies, fake news and
-			misinformation.
+		<p class="text-center text-xl">
+			You get the point.
 			<br />
-			<br />
-			As members of the pro-Palestine community, we are entitled to show our firm oppositon to the Zionist
-			occupation. If you are interested into supporting our cause, we invite you to join our online community.
-			<br />
-			<br />
-			Contact us to learn more about our humanitarian movement and how you can participate in it.
+			F**k Zionism
 		</p>
 		<h1
 			id="social-media"

@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
 	import { name } from '$lib/stores';
-	// export let data;
 </script>
 
 <svelte:head>
@@ -38,37 +37,14 @@
 <main class="flex flex-col justify-evenly gap-14 p-8 md:gap-28 md:p-32">
 	<div>
 		<p class="text-2xl font-medium md:text-3xl">
-			We are {$name}. We are on a mission to expose the propaganda and hate towards Palestinians,
-			Arabs and Muslims. It's about time we take the narrative into our hands, to show the people
-			the truth.
+			We are on a mission to expose the Zionist propaganda and hate aimed at Palestinians. It's
+			about time we take the narrative into our hands. It's about time we show people the truth.
 			<br />
 			<br />
-			<!-- If you know any organization, individual, or any entity that has taken part into discrimination
-			against Muslims, Arabs or Palestinians, you can contact us
-			<a href="/about#social-media" class="underline">here</a>. -->
-			If you have any valuable resources you think would be valuable to the page, you may contact us
+			If you have any valuable resources that you think would be valuable to the page, you can contact
+			us
 			<a href="/about#social-media" class="underline">here</a>.
 		</p>
 	</div>
 	<hr class="bg-gray-300" />
-	<!-- <div>
-		<p class="flex items-center gap-2 text-3xl font-bold sm:text-4xl">
-			<Icon icon="fa:caret-right" class="text-4xl" />
-			Recent Blogs
-		</p>
-		<div class="flex flex-col gap-2 py-4 sm:py-8">
-			{#each data.posts as post, i (i)}
-				<a
-					href={post.path}
-					class="flex flex-col gap-2 rounded-md p-3 transition-all hover:bg-gray-100 hover:drop-shadow sm:h-36 sm:flex-row"
-				>
-					<div class="aspect-video bg-slate-400"></div>
-					<div>
-						<h2 class="pb-2 text-2xl font-bold">{post.meta.title}</h2>
-						<p>{post.meta.description}</p>
-					</div>
-				</a>
-			{/each}
-		</div>
-	</div> -->
 </main>
