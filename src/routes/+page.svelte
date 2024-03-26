@@ -43,7 +43,7 @@
 			<br />
 			If you have any valuable resources that you think would be valuable to the page, you can contact
 			us
-			<a href="/about#social-media" class="underline">here</a>.
+			<a href="/about#contact" class="underline">here</a>.
 		</p>
 	</div>
 	<hr class="bg-gray-300" />
