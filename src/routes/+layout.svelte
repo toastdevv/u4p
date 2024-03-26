@@ -20,13 +20,22 @@
 
 <svelte:head>
 	<title>{$name}</title>
+	<meta name="og:url" content="https://freeps-xi.vercel.app/" />
 	<meta name="og:title" content={$name} />
 	<meta name="og:description" content="Together for a free palestine." />
-	<meta name="og:image" content="/psflag.jpg" />
+	<meta name="og:image" content="https://freeps-xi.vercel.app/psflag.jpg" />
+	<meta property="og:image:type" content="image/jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta name="twitter:site" content="https://freeps-xi.vercel.app/" />
+	<meta name="twitter:title" content={$name} />
+	<meta name="twitter:description" content="Together for a free palestine." />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image:src" content="https://freeps-xi.vercel.app/psflag.jpg" />
 	<meta name="theme-color" content="#e82020" />
 	<meta
 		name="keywords"
-		content="palestine, arabs, muslims, islamophobia, zionism, israel, anti-zionism, pro-palestine, pro-israel, anti-palestine, occupation, freedom, zionist, islam, genocide, ethnic cleansing, racism, anti-semitism, free palestine"
+		content="watermelon, palestine, arabs, muslims, islamophobia, zionism, israel, anti-zionism, pro-palestine, pro-israel, anti-palestine, occupation, freedom, zionist, islam, genocide, ethnic cleansing, racism, anti-semitism, free palestine"
 	/>
 </svelte:head>
 
