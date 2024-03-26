@@ -15,18 +15,17 @@
 		</div>
 	</div>
 	<div class="p-8 md:p-28">
-		<p class="text-center text-xl">
-			You get the point.
-			<br />
-			F**k Zionism
-		</p>
-		<h1
-			id="social-media"
-			class="mb-4 mt-5 flex items-center gap-2 text-2xl font-bold md:mt-6 md:text-3xl"
-		>
-			<Icon icon="fa:caret-right" class="text-4xl" />
-			Social Media
-		</h1>
+		<p class="text-center text-2xl font-medium">Together for a free palestine.</p>
+		<br />
+		<a href="#contact">
+			<h1
+				id="contact"
+				class="mb-4 mt-5 flex items-center gap-2 text-2xl font-bold md:mt-6 md:text-3xl"
+			>
+				<Icon icon="fa:caret-right" class="text-4xl" />
+				Contact
+			</h1>
+		</a>
 		<ul class="ms-4 list-disc">
 			<!-- <li><p class="my-3 font-semibold underline md:text-xl"><a href="/">Facebook</a></p></li>
 			<li><p class="my-3 font-semibold underline md:text-xl"><a href="/">Instagram</a></p></li>
