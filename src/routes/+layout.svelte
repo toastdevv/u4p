@@ -3,9 +3,6 @@
 	import Icon from '@iconify/svelte';
 	import { page } from '$app/stores';
 	import { name } from '$lib/stores';
-	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
-
-	injectSpeedInsights();
 
 	let navs = [
 		{ title: 'Home', href: '/' },
