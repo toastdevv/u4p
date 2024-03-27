@@ -77,9 +77,9 @@
 <nav class="flex flex-row items-center justify-between px-6 py-4">
 	<a href="/">
 		<p class="flex flex-row items-center justify-between text-2xl font-bold">
-			<img src="/favicon.png" class="mr-3 h-6 w-6 object-contain" alt="logo" />
+			<img src="/redarrow.png" class="mr-3 h-6 w-6 object-contain" alt="logo" />
 			{$name}
-			<img src="/favicon.png" class="ml-3 h-6 w-6 object-contain" alt="logo" />
+			<img src="/redarrow.png" class="ml-3 h-6 w-6 object-contain" alt="logo" />
 		</p>
 	</a>
 	<button
@@ -117,9 +117,9 @@
 		<div class="mb-6 md:mb-0">
 			<a href="/">
 				<p class="flex flex-row items-center justify-between text-2xl font-bold">
-					<img src="/favicon.png" class="mr-3 h-6 w-6 object-contain" alt="logo" />
+					<img src="/redarrow.png" class="mr-3 h-6 w-6 object-contain" alt="logo" />
 					{$name}
-					<img src="/favicon.png" class="ml-3 h-6 w-6 object-contain" alt="logo" />
+					<img src="/redarrow.png" class="ml-3 h-6 w-6 object-contain" alt="logo" />
 				</p>
 			</a>
 		</div>
