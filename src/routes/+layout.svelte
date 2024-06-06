@@ -9,7 +9,8 @@
 		{ title: 'Resources', href: '/resources' },
 		{ title: 'Introduction', href: '/resources/info' },
 		{ title: 'Gallery', href: '/resources/gallery' },
-		{ title: 'About Us', href: '/about' }
+		{ title: 'About Us', href: '/about' },
+		{ title: 'Donate', href: '/donate', button: true }
 	];
 
 	let isMenu: boolean = false;
@@ -89,18 +90,24 @@
 	>
 		<Icon icon="ci:hamburger-md" class="text-3xl" />
 	</button>
-	<ul class="invisible hidden md:visible md:inline-flex md:gap-8">
+	<ul class="invisible hidden md:visible md:inline-flex md:gap-4">
 		{#each navs as nav}
-			<li
-				class="group relative underline decoration-transparent transition-all hover:decoration-maingreen-600 hover:decoration-2 hover:underline-offset-2 hover:opacity-75"
-			>
-				<a href={nav.href} class="text-lg font-normal">
-					<div class="absolute flex h-full w-full justify-center">
-						<Icon
-							icon="ion:caret-down-sharp"
-							class="-translate-y-4 text-2xl text-red-600 opacity-0 transition-all group-hover:-translate-y-3 group-hover:opacity-100"
-						/>
-					</div>
+			<li>
+				<a
+					href={nav.href}
+					id={nav.title == 'Donate' ? 'donate' : ''}
+					class="group relative px-4 py-2 text-lg font-normal transition-all {!nav.button
+						? 'underline decoration-transparent hover:decoration-maingreen-600 hover:decoration-2 hover:underline-offset-2 hover:opacity-75'
+						: 'rounded-md border border-green-800 bg-green-600 text-white'}"
+				>
+					{#if nav.button !== true}
+						<div class="absolute left-0 top-0 flex h-full w-full justify-center">
+							<Icon
+								icon="ion:caret-down-sharp"
+								class="-translate-y-2 text-2xl text-red-600 opacity-0 transition-all group-hover:-translate-y-1 group-hover:opacity-100"
+							/>
+						</div>
+					{/if}
 					{nav.title}
 				</a>
 			</li>
@@ -145,6 +152,11 @@
 							Gallery
 						</a>
 					</li>
+					<li class="mb-4">
+						<a href="/donate" class="font-normal text-gray-600 hover:text-gray-900 hover:underline">
+							Donate
+						</a>
+					</li>
 				</ul>
 			</div>
 			<div>
@@ -171,3 +183,14 @@
 		<p class="text-base text-gray-500">© 2023 - 2024 All Rights Reserved.</p>
 	</div>
 </footer>
+
+<style>
+	#donate {
+		box-shadow: 4px 4px 0px black;
+	}
+
+	#donate:hover {
+		box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+		@apply bg-white text-black;
+	}
+</style>
