@@ -31,8 +31,9 @@
 			<li><p class="my-3 font-semibold underline md:text-xl"><a href="/">Instagram</a></p></li>
 			<li><p class="my-3 font-semibold underline md:text-xl"><a href="/">X</a></p></li> -->
 			<li>
-				<p class="my-3 font-semibold underline md:text-xl">
-					<a href="https://discord.gg/DzGtpsCXD3">Discord</a>
+				<p class="my-3 md:text-xl">
+					<span class="font-semibold">Email:</span>&nbsp;
+					<a href="mailto:benamrerayane@proton.me">benamrerayane@proton.me</a>
 				</p>
 			</li>
 		</ul>
