@@ -33,7 +33,9 @@
 			<li>
 				<p class="my-3 md:text-xl">
 					<span class="font-semibold">Email:</span>&nbsp;
-					<a href="mailto:benamrerayane@proton.me">benamrerayane@proton.me</a>
+					<a href="mailto:benamrerayane@proton.me" class="underline">
+						benamrerayane@proton.me
+					</a>
 				</p>
 			</li>
 		</ul>
