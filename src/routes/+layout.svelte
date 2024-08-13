@@ -2,7 +2,6 @@
 	import '$lib/styles/app.css';
 	import Icon from '@iconify/svelte';
 	import { page } from '$app/stores';
-	import { name } from '$lib/stores';
 
 	let navs = [
 		{ title: 'Home', href: '/' },
@@ -17,23 +16,23 @@
 </script>
 
 <svelte:head>
-	<title>{$name}</title>
+	<title>{$FreePS}</title>
 	<meta name="og:url" content="https://freeps-xi.vercel.app/" />
-	<meta name="og:title" content={$name} />
+	<meta name="og:title" content={$FreePS} />
 	<meta name="og:description" content="Together for a free palestine." />
 	<meta name="og:image" content="https://freeps-xi.vercel.app/psflag.jpg" />
 	<meta property="og:image:type" content="image/jpg" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
 	<meta name="twitter:site" content="https://freeps-xi.vercel.app/" />
-	<meta name="twitter:title" content={$name} />
+	<meta name="twitter:title" content={$FreePS} />
 	<meta name="twitter:description" content="Together for a free palestine." />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:image:src" content="https://freeps-xi.vercel.app/psflag.jpg" />
 	<meta name="theme-color" content="#e82020" />
 	<meta
 		name="keywords"
-		content="watermelon, palestine, arabs, muslims, islamophobia, zionism, israel, anti-zionism, pro-palestine, pro-israel, anti-palestine, occupation, freedom, zionist, islam, genocide, ethnic cleansing, racism, anti-semitism, free palestine"
+		content="palestine, arabs, muslims, islamophobia, zionism, israel, anti-zionism, pro-palestine, pro-israel, anti-palestine, occupation, freedom, zionist, islam, genocide, ethnic cleansing, racism, anti-semitism, free palestine"
 	/>
 </svelte:head>
 
@@ -79,8 +78,6 @@
 	<a href="/">
 		<p class="flex flex-row items-center justify-between text-2xl font-bold">
 			<img src="/redarrow.png" class="mr-3 h-6 w-6 object-contain" alt="logo" />
-			{$name}
-			<img src="/redarrow.png" class="ml-3 h-6 w-6 object-contain" alt="logo" />
 		</p>
 	</a>
 	<button
@@ -125,8 +122,6 @@
 			<a href="/">
 				<p class="flex flex-row items-center justify-between text-2xl font-bold">
 					<img src="/redarrow.png" class="mr-3 h-6 w-6 object-contain" alt="logo" />
-					{$name}
-					<img src="/redarrow.png" class="ml-3 h-6 w-6 object-contain" alt="logo" />
 				</p>
 			</a>
 		</div>
@@ -180,7 +175,7 @@
 	</div>
 	<hr class="my-6 border-gray-200 dark:border-gray-700 sm:mx-auto lg:my-8" />
 	<div class="sm:flex sm:items-center sm:justify-between">
-		<p class="text-base text-gray-500">© 2023 - 2024 All Rights Reserved.</p>
+		<p class="text-base text-gray-500">© 2023 - 2024</p>
 	</div>
 </footer>
 
