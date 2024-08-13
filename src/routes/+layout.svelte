@@ -6,8 +6,8 @@
 
 	let navs = [
 		{ title: 'Home', href: '/' },
-		{ title: 'Resources', href: '/resources' },
 		{ title: 'Introduction', href: '/resources/info' },
+		{ title: 'Resources', href: '/resources' },
 		{ title: 'Gallery', href: '/resources/gallery' },
 		{ title: 'About Us', href: '/about' },
 		{ title: 'Donate', href: '/donate', button: true }
@@ -85,12 +85,12 @@
 	</a>
 	<button
 		role="menu"
-		class="visible inline-flex gap-8 md:invisible md:hidden"
+		class="visible inline-flex gap-8 lg:invisible lg:hidden"
 		on:click={() => (isMenu = true)}
 	>
 		<Icon icon="ci:hamburger-md" class="text-3xl" />
 	</button>
-	<ul class="invisible hidden md:visible md:inline-flex md:gap-4">
+	<ul class="invisible hidden lg:visible lg:inline-flex lg:gap-2">
 		{#each navs as nav}
 			<li>
 				<a
@@ -133,6 +133,28 @@
 		<div class="grid grid-cols-2 gap-8 sm:grid-cols-2 sm:gap-8">
 			<div>
 				<h2 class="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
+					Information
+				</h2>
+				<ul>
+					<li class="mb-4">
+						<a href="/" class="font-normal text-gray-600 hover:text-gray-900 hover:underline">
+							Home
+						</a>
+					</li>
+					<li class="mb-4">
+						<a href="https://github.com/toastdevv/u4p" class="font-normal text-gray-600 hover:text-gray-900 hover:underline">
+							GitHub
+						</a>
+					</li>
+					<li class="mb-4">
+						<a href="/about" class="font-normal text-gray-600 hover:text-gray-900 hover:underline">
+							About Us
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h2 class="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
 					Resources
 				</h2>
 				<ul>
@@ -155,23 +177,6 @@
 					<li class="mb-4">
 						<a href="/donate" class="font-normal text-gray-600 hover:text-gray-900 hover:underline">
 							Donate
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div>
-				<h2 class="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
-					Information
-				</h2>
-				<ul>
-					<li class="mb-4">
-						<a href="/" class="font-normal text-gray-600 hover:text-gray-900 hover:underline">
-							Home
-						</a>
-					</li>
-					<li class="mb-4">
-						<a href="/about" class="font-normal text-gray-600 hover:text-gray-900 hover:underline">
-							About Us
 						</a>
 					</li>
 				</ul>
